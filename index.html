@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Astro Weight Calculator</h1>
+</head>
+
+<script src="index.js"></script>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h2>Enter your weight in the box below and select a planet to calculate your space weight.</h2>
+    <br>
+    <!-- Creates input box and planet option list. -->
+    <form>
+        <input type="text" id="weight">
+        <select id="planets">
+            <option value="27.9">Sun</option>
+            <option value="0.3377">Mercury</option>
+            <option value="0.9032">Venus</option>
+            <option value="1">Earth</option>
+            <option value="0.1655">Moon</option>
+            <option value="0.3895">Mars</option>
+            <option value="2.640">Jupiter</option>
+            <option value="1.139">Saturn</option>
+            <option value="0.917">Uranus</option>
+            <option value="1.148">Neptune</option>
+            <option value="0.06">Pluto</option>
+        </select>
+    </form>
+    <br>
+
+    <!-- Button calculator and displays results. -->
+    <button type="button" onclick="answer()">Calculate</button>
+    <p id="displayResult"> </p>
+    <br>
+
+    <!-- Retrieves image of solar system found on Google -->
+    <a href="http://www.space.com/images/i/000/009/474/original/nasa-solar-system-graphic-72.jpg?interpolation=lanczos-none&fit=inside%7C660:*" target="_blank"></a>
+    <img src="http://www.space.com/images/i/000/009/474/original/nasa-solar-system-graphic-72.jpg?interpolation=lanczos-none&fit=inside%7C660:*">
+</body>
+
+
+</html>
